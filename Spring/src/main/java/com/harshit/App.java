@@ -1,5 +1,9 @@
 package com.harshit;
 
+import com.harshit.configByXML.Alien;
+import com.harshit.configByXML.Computer;
+import com.harshit.configByXML.ConfigByXML;
+import com.harshit.configByXML.Desktop;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -11,10 +15,7 @@ public class App
 {
     public static void main( String[] args )
     {
-        ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
-
-        //Creating an object from xml config based context
-        Alien alien = (Alien)context.getBean("alien");
-        alien.code();
+        //Creating all the objects
+        ConfigByXML.runProjectConfigByXML();
     }
 }
