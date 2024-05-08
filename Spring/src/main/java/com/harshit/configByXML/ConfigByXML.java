@@ -1,5 +1,6 @@
 package com.harshit.configByXML;
 
+import com.harshit.Alien;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 

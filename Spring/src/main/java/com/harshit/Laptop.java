@@ -1,7 +1,12 @@
-package com.harshit.configByXML;
+package com.harshit;
 
-import com.harshit.configByXML.Computer;
+import org.springframework.context.annotation.Primary;
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Component;
 
+@Component
+@Primary
+@Scope("prototype")
 public class Laptop implements Computer {
     public Laptop() {
         System.out.println("Laptop Object Created...");

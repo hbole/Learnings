@@ -1,7 +1,10 @@
-package com.harshit.configByXML;
+package com.harshit;
 
-import com.harshit.configByXML.Computer;
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Component;
 
+@Component
+@Scope("prototype")
 public class Desktop implements Computer {
     public Desktop() {
         System.out.println("Desktop Object Created...");

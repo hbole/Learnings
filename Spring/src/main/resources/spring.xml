@@ -5,18 +5,18 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!-- bean definitions here -->
-<!--    <bean id="alien1" class="com.harshit.configByXML.Alien" scope="prototype"></bean>-->
+<!--    <bean id="alien1" class="com.harshit.Alien" scope="prototype"></bean>-->
 <!-- Default scope is singleton which creates only one object for one id, prototype creates multiple objects for a single id but in runtime as and when needed-->
-    <bean id="alien" class="com.harshit.configByXML.Alien" autowire="byType">
+    <bean id="alien" class="com.harshit.Alien" autowire="byType">
         <property name="age" value="21"/>
         <property name="computer">
-            <bean id="computer1" class="com.harshit.configByXML.Laptop" primary="true"/> <!-- Inner Bean, thus ref property is not required by the property tag. -->
+            <bean id="computer1" class="com.harshit.Laptop" primary="true"/> <!-- Inner Bean, thus ref property is not required by the property tag. -->
         </property>
 <!--        <constructor-arg value="21"/>-->
 <!--        <constructor-arg ref="desktop"/>-->
     </bean>
-<!--    <bean id="laptop" class="com.harshit.configByXML.Laptop"/>-->
-<!--    <bean id="desktop" class="com.harshit.configByXML.Desktop"/>-->
-<!--    <bean id="computer1" class="com.harshit.configByXML.Laptop" primary="true"/>-->
-<!--    <bean id="computer2" class="com.harshit.configByXML.Desktop" lazy-init="true" primary="true"/>-->
+<!--    <bean id="laptop" class="com.harshit.Laptop"/>-->
+<!--    <bean id="desktop" class="com.harshit.Desktop"/>-->
+<!--    <bean id="computer1" class="com.harshit.Laptop" primary="true"/>-->
+<!--    <bean id="computer2" class="com.harshit.Desktop" lazy-init="true" primary="true"/>-->
 </beans>
