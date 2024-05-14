@@ -14,7 +14,7 @@ public class ConfigByJavaCode {
         alien.setAge(21);
         System.out.println(alien.getAge());
         alien.code();
-
+//        Code
 //        Desktop desktop = context.getBean(Desktop.class);
 //        desktop.compile();
     }
